@@ -34,7 +34,7 @@ public class PositionTracker extends AbstractTracker {
 
   @Override
   public String version() {
-    return "2";
+    return "3";
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -58,6 +58,7 @@ public class PositionTracker extends AbstractTracker {
     return list;
   }
 
+  @Override
   public TargetSelector requireTarget(TrackingActions action) {
     return action.equals(TrackingActions.ADD) ? TargetSelector.NEWCOORDS : super.requireTarget(action);
   }
@@ -66,6 +67,7 @@ public class PositionTracker extends AbstractTracker {
   // Targets methods
   // ----------------------------------------------------------------------------------------------
 
+  @Override
   public List<String> availableTargets(Player player, String startWith) {
     List<String> list = new ArrayList<String>();
     if (datas().getKeys(false).isEmpty()) return list;
