@@ -19,6 +19,25 @@ public class PositionTracker extends AbstractTracker {
   }
 
   // ----------------------------------------------------------------------------------------------
+  // Tracker methods
+  // ----------------------------------------------------------------------------------------------
+
+  @Override
+  public String github() {
+    return "arboriginal/SCT-PositionTracker";
+  }
+
+  @Override
+  public String trackerID() {
+    return "POSITION";
+  }
+
+  @Override
+  public String version() {
+    return "2";
+  }
+
+  // ----------------------------------------------------------------------------------------------
   // Actions methods
   // ----------------------------------------------------------------------------------------------
 
@@ -41,15 +60,6 @@ public class PositionTracker extends AbstractTracker {
 
   public TargetSelector requireTarget(TrackingActions action) {
     return action.equals(TrackingActions.ADD) ? TargetSelector.NEWCOORDS : super.requireTarget(action);
-  }
-
-  // ----------------------------------------------------------------------------------------------
-  // Tracker methods
-  // ----------------------------------------------------------------------------------------------
-
-  @Override
-  public String trackerID() {
-    return "POSITION";
   }
 
   // ----------------------------------------------------------------------------------------------
