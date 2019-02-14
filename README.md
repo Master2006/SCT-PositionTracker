@@ -21,7 +21,7 @@ Read [settings.yml](https://github.com/arboriginal/SCT-PositionTracker/blob/mast
     - **scompass.track**
     - **scompass.track.POSITION** (or **scompass.track.***)
 - To be able to add or remove positions, players must also have:
-    - **scompass.track.POSITION**
+    - **scompass.track.POSITION.`<manage>`**
 - All named positions in `PositionTracker.yml` use dynamic permissions:
     - **scompass.track.POSITION.defined.`<name>`**
     - **scompass.track.POSITION.defined.spawn** for example to track the position "spawn"
