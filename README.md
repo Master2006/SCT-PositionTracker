@@ -27,3 +27,11 @@ Read [settings.yml](https://github.com/arboriginal/SCT-PositionTracker/blob/mast
     - **scompass.track.POSITION.defined.spawn** for example to track the position "spawn"
 - To have access to all named positions (without **scompass.track.POSITION.defined.<name>** for each), players need:
     - **scompass.track.POSITION.defined.***
+
+**Optional:** (require you set `settings.autoload_target:true`)
+
+- All named positions also use dynamic permissions to be automatically tracked on player join:
+    - **scompass.track.auto.POSITION.`<name>`**
+    - **scompass.track.auto.POSITION.spawn** for example to auto track the position named "spawn"
+- To auto track all named positions (without **scompass.track.auto.POSITION.`<name>`** for each), players need:
+    - **scompass.track.auto.POSITION.***

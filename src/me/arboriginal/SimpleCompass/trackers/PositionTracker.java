@@ -34,7 +34,7 @@ public class PositionTracker extends AbstractTracker {
 
   @Override
   public String version() {
-    return "4";
+    return "5";
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -154,7 +154,7 @@ public class PositionTracker extends AbstractTracker {
 
   @Override
   public String key(Player player, String name) {
-    return (name == null ? "" : name.toLowerCase());
+    return (name == null ? "" : name);
   }
 
   @Override
